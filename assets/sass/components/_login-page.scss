@@ -1,0 +1,53 @@
+.login-page {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  background-color: $color-primary;
+
+  .login-bg {
+    height: 100%;
+    opacity: 0.6;
+  }
+
+  .login-page-wrapper {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .login-container {
+      width: 496px;
+      background-color: $color-white;
+
+      .main-logo svg {
+        margin-bottom: 25px;
+      }
+
+      .text-link {
+        color: $color-complete-light;
+        &:hover {
+          color: $color-complete-lighter;
+        }
+      }
+
+      .btn-primary {
+        width: 175px;
+        padding: 13px 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .login-container {
+        width: 100%;
+
+        .checkbox label {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
