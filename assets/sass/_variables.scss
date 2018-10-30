@@ -4,7 +4,7 @@
 
 // Styles from the template
 @import '../../app/@pages/styles/core.scss';
-// @import './typography';
+@import './typography';
 
 $white: $color-white;
 
@@ -21,4 +21,6 @@ $footerLinkSeparatorColor: #6d5cae;
 $templateDefaultFont: 'Segoe UI', Arial, sans-serif;
 $fontDefault: 'Helvetica', Arial, sans-serif;
 $fontRoboto: 'Roboto', Arial, sans-serif;
-$fontHelvetica: 'helveticaregular', Arial, 'Lucida Grande', sans-serif;
+$helveticaRegular: 'helveticaregular', Arial, 'Lucida Grande', sans-serif;
+$helveticaBold: 'helvetica', Arial, 'Lucida Grande', sans-serif;
+$helveticaLight: 'helveticalight', Arial, 'Lucida Grande', sans-serif;

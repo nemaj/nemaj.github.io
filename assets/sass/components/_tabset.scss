@@ -47,6 +47,7 @@
           text-align: center;
         }
         &.active {
+          font-family: $helveticaBold;
           background-color: #6d5cae !important;
           border-color: #6d5cae !important;
           color: #fff !important;
@@ -64,6 +65,9 @@
             &.hide-active {
               display: none;
             }
+          }
+          span {
+            font-family: $helveticaBold;
           }
         }
         .fa {
@@ -138,6 +142,7 @@
         justify-content: center;
         span {
           &:nth-child(1) {
+            font-family: $helveticaBold;
             font-size: 18px;
             color: #2c2c2c;
             font-weight: bold;
@@ -184,6 +189,7 @@
               min-width: 80px;
             }
             &.text-bold {
+              font-family: $helveticaBold;
               font-weight: bold;
             }
             .label-value {
@@ -208,6 +214,7 @@
                   font-weight: 400;
                 }
                 &.value {
+                  font-family: $helveticaBold;
                   font-size: 13px;
                   font-weight: bold;
                 }
@@ -228,6 +235,7 @@
       line-height: 18px;
       margin-bottom: 20px;
       &.bold {
+        font-family: $helveticaBold;
         font-weight: bold;
       }
       &.font-16 {
@@ -238,6 +246,9 @@
       }
       &.uppercase {
         text-transform: uppercase;
+      }
+      &.color-dark {
+        color: #2c2c2c;
       }
     }
     .btn-link {

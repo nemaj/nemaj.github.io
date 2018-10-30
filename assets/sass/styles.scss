@@ -3,3 +3,7 @@
 @import './components/tabset';
 @import './components/login-page';
 @import './components/carousel';
+
+* {
+  font-family: $helveticaRegular;
+}
