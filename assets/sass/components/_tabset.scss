@@ -126,6 +126,57 @@
     padding: 15px;
     padding-bottom: 20px;
     margin-bottom: 30px;
+
+    .svg-icon svg {
+      position: relative;
+      top: 3px;
+    }
+
+    .card-body {
+      padding: 0;
+      border: none;
+      .table tr {
+        th {
+          font-family: $helveticaRegular;
+          font-size: 13px;
+          text-align: center;
+          text-transform: none;
+          color: #909090;
+          &.bg {
+            background-color: #f8d053;
+            color: $white;
+          }
+        }
+        td {
+          padding: 5px 0;
+          text-align: center;
+          &.bg {
+            background-color: #fef6dd;
+            color: #cfae45;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .disclamer {
+        background: #fef6dd;
+        border-radius: 2px;
+        padding: 10px 20px;
+        .title {
+          font-family: $fontRoboto;
+          font-weight: bold;
+          font-size: 13px;
+          color: #cfae45;
+        }
+        .desc {
+          font-size: 13px;
+          color: #626262;
+          line-height: 18px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
     .card-title {
       display: flex;
       padding-bottom: 7px;
