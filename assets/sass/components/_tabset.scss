@@ -127,6 +127,53 @@
     padding-bottom: 20px;
     margin-bottom: 30px;
 
+    &.coming-soon {
+      .card-title p {
+        opacity: 0.3;
+      }
+      .thumbnail {
+        position: relative;
+        .image {
+          background: url('/assets/img/walkthrough.jpg') center center no-repeat;
+          background-size: cover;
+          height: 185px;
+          width: 100%;
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          margin-bottom: 25px;
+        }
+        .coming-flag {
+          position: absolute;
+          top: 75px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          &-wrapper {
+            background: #48b0f7;
+            border-radius: 5px;
+            color: #fff;
+            padding: 7px 10px;
+            font-size: 14px;
+          }
+        }
+        .badge {
+          opacity: 0.3;
+          color: transparent;
+          padding: 1px;
+          margin-bottom: 10px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          &.placeholder {
+            width: 100%;
+          }
+        }
+      }
+    }
+
     .svg-icon svg {
       position: relative;
       top: 3px;
