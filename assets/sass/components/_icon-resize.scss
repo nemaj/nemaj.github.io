@@ -5,7 +5,34 @@
   }
 }
 
-.icon-md svg {
-  position: relative;
-  top: 2px;
+.icon-md {
+  svg {
+    position: relative;
+    top: 2px;
+  }
+  &-3 svg {
+    position: relative;
+    top: 3px;
+  }
+}
+.wallet {
+  &-icon {
+    svg {
+      width: 22px;
+      position: relative;
+      top: 3px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .mobile-icon {
+    &-time svg {
+      width: 17px;
+      top: 4px;
+    }
+  }
+  .wallet-icon svg {
+    width: 20px;
+  }
 }
