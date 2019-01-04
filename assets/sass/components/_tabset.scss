@@ -117,6 +117,162 @@
   }
 }
 
+// Comparison tabs -----------------------------------
+
+.comparison-tabs {
+  &.tab-wrapper {
+    ul {
+      padding-bottom: 0px;
+    }
+    &.tab-horizontal .nav-tabs-wrapper .nav-wrap:after {
+      // border-bottom: 2px solid #6d5cae !important;
+      border-bottom: 0px;
+      ul {
+        padding-bottom: 0px;
+      }
+    }
+    .tab-content-wrapper {
+      padding-top: 0px;
+      // padding-bottom: 15px;
+    }
+  }
+
+  .nav-tabs-simple {
+    
+    li:nth-child(2){ 
+      a{
+        border-bottom: 2px solid #F8D053 !important;
+      &.active{
+           background-color: #10CFBD !important;
+           border:none !important;
+           border-bottom: 2px solid #10CFBD  !important;
+         }
+       }
+   }
+
+ 
+   li:last-child{ 
+     a{
+      border-bottom: 2px solid #10CFBD !important;
+     &.active{
+          background-color: #F8D053 !important ;
+          border:none !important;
+          border-bottom: 2px solid #F8D053 !important;
+        }
+      }
+  }
+    .active-bar {
+      display: none !important;
+    }
+
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        min-width: 150px;
+        background-color: #fff !important;
+        border: 1px solid #e6e6e6 !important;
+        border-bottom: 0 !important;
+        border-right: 0 !important;
+        padding: 20px 15px;
+        font-size: 14px;
+        color: #909090;
+        letter-spacing: initial;
+        text-transform: none;
+        line-height: initial;
+        font-weight: 400;
+        .tab-icon {
+          &.show-active {
+            display: none;
+          }
+          &.hide-active {
+            display: initial;
+          }
+          svg {
+            width: 20px; 
+            height: 20px;
+            position: relative;
+            top: 1px;
+          }
+        }
+        span {
+          text-align: center;
+        }
+        &.active {
+          font-family: $helveticaBold;
+          background-color: #6d5cae !important;
+          border-color: #6d5cae !important;
+          color: #fff !important;
+          font-size: 16px;
+          font-weight: bold;
+          &:hover {
+            background-color: #8a7dbe;
+            border-color: #8a7dbe;
+            color: #fff;
+          }
+          .tab-icon {
+            &.show-active {
+              display: initial;
+            }
+            &.hide-active {
+              display: none;
+            }
+          }
+          span {
+            font-family: $helveticaBold;
+          }
+        }
+        .fa {
+          margin-right: 7px;
+          font-size: 18px;
+        }
+      }
+      &:last-child > a {
+        border-right: 1px solid #e6e6e6 !important;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &.tab-wrapper .tab-content-wrapper {
+      // padding: 15px;
+    }
+    .nav-tabs-navigator {
+      display: none;
+    }
+    .nav-tabs-simple {
+      display: flex;
+      .nav-item {
+        flex-grow: 1;
+        width: 25%;
+        a {
+          min-width: auto;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          font-size: 12px;
+          padding: 20px 5px;
+          .tab-icon {
+            margin: 0;
+            margin-bottom: 5px;
+          }
+          .fa {
+            margin: 0;
+            margin-bottom: 5px;
+          }
+          &.active {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Comparison tabs end -------------------------------
+
 .tab-details {
   margin-top: 15px;
   .card-wrapper {
