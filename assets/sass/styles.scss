@@ -8,3 +8,12 @@
 * {
   font-family: $helveticaRegular;
 }
+
+#chat-widget-container {
+  right: 15px !important;
+}
+@media (max-width: 991px) {
+  #chat-widget-container {
+    right: 5px !important;
+  }
+}
