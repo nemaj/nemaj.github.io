@@ -138,29 +138,27 @@
   }
 
   .nav-tabs-simple {
-    
-    li:nth-child(2){ 
-      a{
-        border-bottom: 2px solid #F8D053 !important;
-      &.active{
-           background-color: #10CFBD !important;
-           border:none !important;
-           border-bottom: 2px solid #10CFBD  !important;
-         }
-       }
-   }
-
- 
-   li:last-child{ 
-     a{
-      border-bottom: 2px solid #10CFBD !important;
-     &.active{
-          background-color: #F8D053 !important ;
-          border:none !important;
-          border-bottom: 2px solid #F8D053 !important;
+    li:nth-child(2) {
+      a {
+        border-bottom: 2px solid #f8d053 !important;
+        &.active {
+          background-color: #10cfbd !important;
+          border: none !important;
+          border-bottom: 2px solid #10cfbd !important;
         }
       }
-  }
+    }
+
+    li:last-child {
+      a {
+        border-bottom: 2px solid #10cfbd !important;
+        &.active {
+          background-color: #f8d053 !important ;
+          border: none !important;
+          border-bottom: 2px solid #f8d053 !important;
+        }
+      }
+    }
     .active-bar {
       display: none !important;
     }
@@ -191,7 +189,7 @@
             display: initial;
           }
           svg {
-            width: 20px; 
+            width: 20px;
             height: 20px;
             position: relative;
             top: 1px;
@@ -436,8 +434,25 @@
         margin-bottom: 10px;
         .card-column {
           padding: 10px;
-          &:nth-child(even) {
+          &:nth-child(odd) {
             background-color: #fafafa;
+          }
+        }
+      }
+      .card-header {
+        background: #f7f7f7;
+        display: flex;
+        border: 0;
+        padding: 10px;
+        span {
+          font-size: 13px;
+          font-weight: 600;
+          color: #626262;
+          &:first-child {
+            flex-grow: 1;
+          }
+          &.width-100 {
+            width: 100px;
           }
         }
       }
@@ -468,6 +483,9 @@
             &.text-bold {
               font-family: $helveticaBold;
               font-weight: bold;
+            }
+            &.text-right {
+              text-align: right;
             }
             .label-value {
               display: flex;
