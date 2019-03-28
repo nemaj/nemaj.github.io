@@ -18,6 +18,22 @@
     position: relative;
     top: 3px;
   }
+  &-4 svg {
+    position: relative;
+    top: 4px;
+  }
+  &-5 svg {
+    position: relative;
+    top: 5px;
+  }
+  &-6 svg {
+    position: relative;
+    top: 6px;
+  }
+  &-7 svg {
+    position: relative;
+    top: 7px;
+  }
 }
 .wallet {
   &-icon {
@@ -26,6 +42,14 @@
       position: relative;
       top: 3px;
     }
+  }
+}
+
+.add-property-icon {
+  svg {
+    position: relative;
+    top: 2px;
+    width: 12px;
   }
 }
 
@@ -38,5 +62,25 @@
   }
   .wallet-icon svg {
     width: 20px;
+  }
+  .blank-content icon-empty-property {
+    > svg {
+      width: 180px;
+      height: 180px;
+    }
+  }
+}
+
+.confirm-logo {
+  svg {
+    width: 180px;
+    height: 45.6px;
+  }
+
+  @media (max-width: 660px) {
+    svg {
+      width: 139px;
+      height: 35px;
+    }
   }
 }
