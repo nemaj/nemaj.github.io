@@ -1,0 +1,29 @@
+.tpc-signup-modal {
+  margin: 0;
+  height: auto;
+  min-height: 100vh;
+  width: 100vw !important;
+  max-width: none;
+  .modal-content {
+    height: auto;
+    min-height: 100vh;
+    background: #fff;
+    border-radius: 0;
+    border: 0;
+  }
+}
+
+.tpc-warning-modal {
+  margin: 0;
+  height: auto;
+  min-height: 100vh;
+  width: 100vw !important;
+  max-width: none;
+  .modal-content {
+    height: auto;
+    min-height: 100vh;
+    background: rgba(#fff, 0.8);
+    border-radius: 0;
+    border: 0;
+  }
+}

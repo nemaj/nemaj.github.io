@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Signin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page-TPC-Copy" transform="translate(-1081.000000, -70.000000)">
+            <g id="Group-16">
+                <g id="Header_lg" transform="translate(1.000000, 67.000000)">
+                    <g id="Group-3" transform="translate(1081.000000, 4.000000)">
+                        <g id="Signin">
+                            <circle id="Oval-3" stroke="#14A1A8" cx="12.5" cy="12.5" r="12.5"></circle>
+                            <path d="M13,12.5034377 C11.3431458,12.5034377 10,11.0475936 10,9.25171886 C10,7.45584412 11.3431458,6 13,6 C14.6568542,6 16,7.45584412 16,9.25171886 C16,11.0475936 14.6568542,12.5034377 13,12.5034377 Z M16.3075175,11.6907348 C17.345406,12.6837831 18,14.1366114 18,15.7551566 C18,18.7482811 8,18.7482811 8,15.7551566 C8,14.1366114 8.65459395,12.6837831 9.69248249,11.6907348 C10.4124884,12.83563 11.6252537,13.587344 13,13.587344 C14.3747463,13.587344 15.5875116,12.83563 16.3075175,11.6907348 Z" id="icon" fill="#14A1A8"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

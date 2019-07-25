@@ -1,0 +1,258 @@
+// .return-sliders {
+//   pg-slider {
+//     div.pg-slider-rail {
+//       height: 8px;
+//     }
+//     div.pg-slider-track {
+//       height: 8px;
+//       border-radius: 4px;
+//     }
+//     .show {
+//       opacity: 1;
+//       top: -50px !important;
+//       left: -22px !important;
+//     }
+//     div.tooltip-inner {
+//       background-color: #6d5cae;
+//     }
+//   }
+// }
+
+@import '~assets/sass/variables';
+
+
+.section {
+  >.container {
+    >.content-wrapper {
+      >.investment-amount-container {
+        >.slider-wrapper {
+          >pg-slider {
+            >.pg-slider {
+              >.pg-slider-rail {
+                height: 8px;
+                border-radius: 5px;
+              }
+
+              >pg-slider-track {
+                >.pg-slider-track {
+                  height: 8px;
+                  border-radius: 5px;
+                  background-color: #6d5cae;
+                }
+              }
+
+              >pg-slider-handle {
+                >.pg-slider-handle {
+                  border: 2px solid #6d5cae;
+
+                  >.tooltip {
+                    top: -55px !important;
+                    left: -30px !important;
+                    opacity: unset;
+
+                    >.tooltip-inner {
+                      width: 75px;
+                      background-color: #6d5cae;
+                      line-height: 15px;
+
+                      >span {
+                        font-family: $helveticaLight;
+                      }
+                    }
+
+                    >:before {
+                      content: '';
+                      display: block;
+                      width: 0;
+                      height: 0;
+                      position: absolute;
+                      border-left: 10px solid transparent;
+                      border-right: 10px solid transparent;
+                      border-top: 10px solid #6d5cae;
+                      bottom: -10px;
+                      right: 29px;
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      >.estimated-returns-container {
+        >.slider-container {
+          display: flex;
+          padding: 10px;
+          background-color: #FAFAFA;
+          border-radius: 5px;
+          margin-top: 15px;
+
+          >.slider-wrapper {
+
+            >.sub-slider-wrapper {
+              >pg-slider {
+                >.pg-slider {
+                  >.pg-slider-rail {
+                    height: 8px;
+                    border-radius: 5px;
+                  }
+
+                  >pg-slider-track {
+                    >.pg-slider-track {
+                      height: 8px;
+                      border-radius: 5px;
+                      background-color: #40d9ca;
+                    }
+                  }
+
+                  >pg-slider-handle {
+                    >.pg-slider-handle {
+                      border: 2px solid #40d9ca;
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  &.partbnb-template-h {
+    >.container {
+      >.content-wrapper {
+        >.investment-amount-container {
+          >.slider-wrapper {
+            >pg-slider {
+              >.pg-slider {
+
+                >pg-slider-track {
+                  >.pg-slider-track {
+                    background-color: #6d5cae;
+                  }
+                }
+
+                >pg-slider-handle {
+                  >.pg-slider-handle {
+                    border: 2px solid #6d5cae;
+
+                    >.tooltip {
+                      >.tooltip-inner {
+                        background-color: #6d5cae;
+
+                        >span {
+                          font-family: $helveticaLight;
+                        }
+                      }
+
+                      >:before {
+                        border-top: 10px solid #6d5cae;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        >.estimated-returns-container {
+          >.slider-container {
+            >.slider-wrapper {
+              >.sub-slider-wrapper {
+                >pg-slider {
+                  >.pg-slider {
+
+                    >pg-slider-track {
+                      >.pg-slider-track {
+                        background-color: #40d9ca;
+                      }
+                    }
+
+                    >pg-slider-handle {
+                      >.pg-slider-handle {
+                        border: 2px solid #40d9ca;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.thepropertycrowd-template-h {
+    >.container {
+      >.content-wrapper {
+        >.investment-amount-container {
+          >.slider-wrapper {
+            >pg-slider {
+              >.pg-slider {
+
+                >pg-slider-track {
+                  >.pg-slider-track {
+                    background-color: #14A1A8;
+                  }
+                }
+
+                >pg-slider-handle {
+                  >.pg-slider-handle {
+                    border: 2px solid #14A1A8;
+
+                    >.tooltip {
+                      >.tooltip-inner {
+                        background-color: #14A1A8;
+
+                        >span {
+                          font-family: $questrialRegular;
+                          font-weight: bold;
+                        }
+                      }
+
+                      >:before {
+                        border-top: 10px solid #14A1A8;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        >.estimated-returns-container {
+          >.slider-container {
+            >.slider-wrapper {
+              >.sub-slider-wrapper {
+                >pg-slider {
+                  >.pg-slider {
+
+                    >pg-slider-track {
+                      >.pg-slider-track {
+                        background-color: #14A1A8;
+                      }
+                    }
+
+                    >pg-slider-handle {
+                      >.pg-slider-handle {
+                        border: 2px solid #14A1A8;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="45px" viewBox="0 0 40 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Pause icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Video-on-full-screen-Copy" transform="translate(-933.000000, -242.000000)" fill="#FFFFFF">
+            <path d="M937,242 L943,242 C945.209139,242 947,243.790861 947,246 L947,283 C947,285.209139 945.209139,287 943,287 L937,287 C934.790861,287 933,285.209139 933,283 L933,246 C933,243.790861 934.790861,242 937,242 Z M963,242 L969,242 C971.209139,242 973,243.790861 973,246 L973,283 C973,285.209139 971.209139,287 969,287 L963,287 C960.790861,287 959,285.209139 959,283 L959,246 C959,243.790861 960.790861,242 963,242 Z" id="Pause-icon"></path>
+        </g>
+    </g>
+</svg>

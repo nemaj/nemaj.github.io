@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import './variables';
+@import './components/tabset';
+@import './components/login-page';
+@import './components/carousel';
+@import './components/_sliders';
+@import './components/icon-resize';
+@import './components/banners';
+@import './components/plaid-modal';
+@import './components/confirmation';
+@import './components/select';
+@import './components/centered-modal';
+@import './components/progress';
+@import './components/buttons';
+@import './components/tpc-signup';
+@import './components/tpc-forms';
+@import './components/modals';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+* {
+  font-family: $helveticaRegular;
+}
+
+.modal-backdrop.show {
+  opacity: 0.95;
+  background-color: #231b41;
+}
+.thepropertycrowd-body .modal-backdrop.show {
+  background-color: transparent;
+}
+
+#chat-widget-container {
+  right: 15px !important;
+}
+
+@media (max-width: 991px) {
+  #chat-widget-container {
+    right: 5px !important;
+  }
+}
