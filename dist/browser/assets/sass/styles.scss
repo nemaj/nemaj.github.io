@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+@import './variables';
+@import './components/modal';
+@import './components/tabset';
+@import './components/login-page';
+@import './components/carousel';
+@import './components/_sliders';
+@import './components/icon-resize';
+@import './components/banners';
+@import './components/plaid-modal';
+@import './components/confirmation';
+@import './components/select';
+@import './components/centered-modal';
+@import './components/progress';
+@import './components/buttons';
+@import './components/donut-chart';
+@import './components/accordion';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+* {
+  font-family: $fontRoboto;
+}
+
+#chat-widget-container {
+  right: 15px !important;
+}
+
+@media (max-width: 991px) {
+  #chat-widget-container {
+    right: 5px !important;
+  }
+}
+
+.mark, mark {
+  padding: 0 0.2em;
+  background-color: #fcf8e3;
+}
+
+.owners-agreement-section .item > div{
+  text-align: left;
+  opacity: 0.9;
+  font-size: 14px;
+  color: #626262;
+  line-height: 21px;
+
+  h5{
+    text-align: left;
+    font-family: $fontRoboto;
+    font-weight: 700;
+    font-size: 14px;
+    color: #626262;
+    margin-bottom: 13px;
+
+  }
+  
+  ol{
+    list-style: none;
+    padding: 0;
+    padding-left: 21px;
+    li{
+      padding: 0;
+      margin-bottom: 5px;
+    }
+
+    &.alpha{
+      
+      li{
+        counter-increment: item;
+        &:before{
+          content: counter(item, upper-alpha) ".";
+          font-weight: bold;
+          margin-left: -20px;
+          margin-right: 7px;
+        }
+      }
+    }
+
+    &.roman{
+      
+      li{
+        counter-increment: itemr;
+        &:before{
+          content: counter(itemr, lower-roman) ".";
+          font-weight: bold;
+          margin-left: -20px;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+  p,li{
+    opacity: 0.9;
+    font-size: 14px;
+    color: #626262;
+    line-height: 21px;
+  }
+
+  img{
+    max-width: 100%;
+  }
+}
