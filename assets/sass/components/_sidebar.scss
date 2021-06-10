@@ -1,0 +1,233 @@
+@import '~assets/sass/variables';
+
+
+.quote-engine-ui {
+  position: relative;
+
+  > .engine-content {
+
+    > .sidebar {
+      width: 250px;
+      background: #72bab3;
+
+      > .sidebar-header {
+        font-family: $questrialRegular;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 20px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #6bafa8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > .fas {
+          font-size: 14px;
+        }
+      }
+
+      > .sidebar-btn {
+        cursor: pointer;
+        font-family: $questrialRegular;
+        font-size: 14px;
+        background: #72bab3;
+        color: #c8e5e4;
+        border: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+
+        &:disabled {
+          cursor: not-allowed;
+
+          &:hover {
+            background: #72bab3;
+          }
+        }
+
+        > .fas {
+          margin-right: 5px;
+        }
+
+        &:hover {
+          background: #6aada6;
+        }
+      }
+
+      > .client-list {
+        > .client-item {
+          &.disabled {
+            > .details {
+              &:hover {
+                background: #72bab3;
+              }
+            }
+
+            > .client-benefits {
+              > .empty-btn:hover {
+                color: #80d2ca;
+                border: 1px dashed #80d2ca;
+              }
+            }
+          }
+
+          > .details {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+
+            &:hover {
+              background: #6aada6;
+            }
+
+            > .info {
+              display: flex;
+              flex-direction: column;
+
+              > label {
+                font-family: $helveticaBold;
+                font-size: 14px;
+                color: #ffffff;
+                margin: 0;
+                line-height: 14px;
+              }
+
+              > p {
+                font-family: $questrialRegular;
+                font-size: 10px;
+                line-height: 14px;
+                color: #ffffff;
+                opacity: 0.85;
+                margin: 0;
+                display: flex;
+                align-items: center;
+
+                > .fas {
+                  margin: 0 4px;
+                  font-size: 4px;
+                }
+              }
+            }
+
+            > .btn-option {
+              // cursor: pointer;
+              // float: right;
+              // color: #ffffff;
+              // margin-right: 5px;
+              // font-size: 14px;
+              > button {
+                padding-top: 0;
+                padding-bottom: 0;
+
+                &:focus {
+                  box-shadow: none;
+                }
+
+                &:after {
+                  display: none;
+                }
+
+                > .fas {
+                  color: #ffffff;
+                  font-size: 14px;
+                }
+              }
+
+              > .dropdown-menu {
+                padding: 5px 0;
+
+                > .dropdown-item {
+                  padding: 5px 20px;
+
+                  &:hover {
+                    background: #e9f5f4;
+                  }
+
+                  &.delete {
+                    > .far,
+                    > span {
+                      color: #ab5462;
+                    }
+                  }
+
+                  > .far {
+                    margin-right: 8px;
+                    font-size: 13px;
+                    color: #666666;
+                  }
+
+                  > span {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+          }
+
+          > .client-benefits {
+            background: #6aada6;
+            padding: 15px 20px;
+
+            > .benefit-item {
+              padding: 10px 0;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              &:hover {
+                > .far {
+                  display: block;
+                }
+              }
+
+              > label {
+                color: #ffffff;
+                font-family: $questrialRegular;
+                font-size: 12px;
+                margin: 0;
+                display: flex;
+
+                > .benefit-icn {
+                  height: 15px;
+                  margin-right: 5px;
+                }
+              }
+
+              > .far {
+                cursor: pointer;
+                font-size: 12px;
+                color: #d0e2e1;
+                display: none;
+              }
+            }
+
+            > .empty-btn {
+              cursor: pointer;
+              padding: 4px 10px;
+              font-family: $helveticaBold;
+              font-size: 10px;
+              color: #80d2ca;
+              border: 1px dashed #80d2ca;
+              border-radius: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              > .fas {
+                font-size: 9px;
+                margin-right: 5px;
+              }
+
+              &:hover {
+                color: #ffffff;
+                border: 1px dashed #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

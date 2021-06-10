@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import './variables';
+@import './components/main-style';
+@import './components/sidebar';
+@import './components/forms';
+@import './components/benefits';
+
+body {
+  margin: 0;
+  font-family: $questrialRegular;
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

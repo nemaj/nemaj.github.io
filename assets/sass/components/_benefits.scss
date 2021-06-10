@@ -1,0 +1,120 @@
+@import '~assets/sass/variables';
+
+.benefit-container {
+  &.disabled {
+    * {
+      cursor: unset !important;
+      opacity: 0.85;
+    }
+
+    > .benefit-header {
+      opacity: 0.7;
+    }
+  }
+
+  > .benefit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #999999;
+    padding: 5px 10px;
+    border-radius: 3px;
+
+    &.opened {
+      background: #5d5d5d;
+
+      > .options {
+        > .opened-icn {
+          cursor: pointer;
+          color: #ffffff;
+          margin-right: 5px;
+        }
+
+        > .product-btn {
+          background: #e6e6e6;
+          border: 1px solid #e6e6e6;
+          color: #5d5d5d;
+
+          > .fas {
+            color: #5d5d5d;
+          }
+
+          > .badge-count {
+            background: #5d5d5d;
+            color: #e6e6e6;
+          }
+
+          > label {
+            font-weight: bold;
+            color: #5d5d5d;
+          }
+        }
+      }
+    }
+
+    > label {
+      font-family: $helveticaBold;
+      font-size: 14px;
+      color: #ffffff;
+      margin: 0;
+      display: flex;
+      align-items: center;
+
+      > .benefit-icn {
+        height: 15px;
+        margin-right: 7px;
+      }
+    }
+
+    > .options {
+      display: flex;
+      align-items: center;
+
+      > .product-btn {
+        cursor: pointer;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        padding: 1px 5px;
+        padding-top: 0;
+
+        > .fas {
+          cursor: pointer;
+          font-size: 12px;
+          color: #ffffff;
+          margin-right: 5px;
+        }
+
+        > label {
+          cursor: pointer;
+          font-family: $questrialRegular;
+          font-size: 14px;
+          color: #ffffff;
+          margin: 0;
+        }
+
+        > .badge-count {
+          cursor: pointer;
+          background: #ffffff;
+          padding: 1px 4px;
+          border-radius: 5px;
+          margin-left: 5px;
+          color: #999999;
+          font-family: $helveticaBold;
+          font-size: 14px;
+          padding-left: 0;
+        }
+      }
+
+      > .del-btn {
+        cursor: pointer;
+        font-size: 14px;
+        color: #ffffff;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  > .benefit-body {
+    padding: 15px;
+  }
+}
