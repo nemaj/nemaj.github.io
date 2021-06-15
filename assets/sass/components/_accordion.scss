@@ -1,0 +1,117 @@
+@import '~assets/sass/variables';
+
+.engine-accordion {
+  > .card {
+    margin-bottom: 10px;
+    border: 1px solid #e6e6e6 !important;
+    border-radius: 8px !important;
+
+    > .card-header {
+      padding: 2px 20px;
+      background: #fff;
+
+      .acc-header {
+        display: flex;
+        align-items: center;
+
+        > .result-img {
+          flex-grow: 1;
+
+          > img {
+            height: 50px;
+          }
+        }
+        
+        > .options {
+          display: flex;
+
+          > .more-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 15px;
+
+            > p {
+              font-family: $questrialRegular;
+              font-weight: bold;
+              font-size: 14px;
+              color: #333333;
+              margin: 0;
+              line-height: 18px;
+            }
+
+            > span {
+              font-family: $questrialRegular;
+              font-size: 12px;
+              font-style: italic;
+              color: #333333;
+              margin: 0;
+              line-height: 12px;
+            }
+          }
+
+          > .toggle-btn {
+            width: 20px;
+            color: #838383;
+            border: 0;
+            background: transparent;
+    
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+
+    .card-body {
+      padding: 0;
+
+      > .client-detail {
+        padding: 10px 20px;
+        padding-right: 50px;
+        border-bottom: 1px dashed #e6e6e6;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        > label {
+          font-family: $questrialRegular;
+          font-weight: bold;
+          font-size: 14px;
+          color: #666666;
+          margin: 0;
+        }
+
+        > .benefit {
+          display: flex;
+          justify-content: space-between;
+
+          > p {
+            position: relative;
+            font-family: $questrialRegular;
+            font-size: 14px;
+            color: #666666;
+            margin: 0;
+            padding-left: 15px;
+
+            > .fas {
+              font-size: 6px;
+              position: absolute;
+              top: 7px;
+              left: 4px;
+            }
+          }
+          
+          > span {
+            font-family: $questrialRegular;
+            font-size: 14px;
+            color: #666666;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -191,8 +191,32 @@
       > .result-content {
         padding: 20px;
 
+        .result-btn {
+          background: #72bab3;
+          border: 1px solid #72bab3;
+          padding: 4px 20px;
+          border-radius: 4px;
+          color: #ffffff;
+          font-family: $questrialRegular;
+          font-size: 14px;
+
+          > .fas {
+            font-size: 12px;
+            margin-right: 5px;
+          }
+
+          &:disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+          }
+        }
+
         > .result-header {
           height: 45px;
+
+          .result-btn {
+            width: 100%;
+          }
         }
 
         > .empty-result {
@@ -218,24 +242,17 @@
             color: #666666;
             margin-bottom: 5px;
           }
+        }
 
-          > .result-btn {
-            background: #72bab3;
-            border: 1px solid #72bab3;
-            padding: 4px 20px;
-            border-radius: 4px;
-            color: #ffffff;
-            font-family: $questrialRegular;
-            font-size: 14px;
+        > .result-body {
+          > .result-content {
+            margin-bottom: 30px;
 
-            > .fas {
-              font-size: 12px;
-              margin-right: 5px;
-            }
-
-            &:disabled {
-              cursor: not-allowed;
-              opacity: 0.5;
+            > label {
+              font-family: $questrialRegular;
+              font-weight: bold;
+              font-size: 18px;
+              color: #333333;
             }
           }
         }
