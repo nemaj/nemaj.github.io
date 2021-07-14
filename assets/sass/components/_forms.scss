@@ -1,14 +1,16 @@
 @import '~assets/sass/variables';
 
 $feildHeight: 30px;
-$inputErrorColor: #D06354;
-$inputErrorField: #B85B4E;
+$inputErrorColor: #a54855;
+$inputErrorField: #a54855;
+$borderColor: #999999;
 
 .form-section {
   margin-bottom: 15px;
 }
 
 .form-engine-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
@@ -22,14 +24,15 @@ $inputErrorField: #B85B4E;
 
   &.short-field {
     input,
-    select {
-      width: 50%;
-      margin-right: 5px;
+    select,
+    ngx-select {
+      width: calc( 50% - 3px );
+      // margin-right: 5px;
     }
   }
 
   &.two-field {
-    > .fields {
+    .fields {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -51,12 +54,21 @@ $inputErrorField: #B85B4E;
   }
 
   &.has-error {
-    > input,
-    > .pg-select > .pg-select-selection ,
-    > .ant-calendar-picker > span > input,
-    > textarea {
-      border: 1px solid $inputErrorField !important;
-      background: rgba($inputErrorField, 0.05);
+    > label {
+      color: $inputErrorColor;
+
+      > span {
+        font-weight: normal;
+      }
+    }
+
+    input,
+    .pg-select > .pg-select-selection ,
+    .ant-calendar-picker > span > input,
+    textarea,
+    .form-radio-button > .form-radio label {
+      border: 1.2px solid $inputErrorField !important;
+      // background: rgba($inputErrorField, 0.05);
     }
   }
 
@@ -80,15 +92,16 @@ $inputErrorField: #B85B4E;
     width: 100%;
     height: $feildHeight;
     background: #ffffff;
-    border: 1px solid #666666;
+    border: 1px solid $borderColor;
     border-radius: 3px;
     font-family: $questrialRegular;
     font-size: 14px;
     color: #666666;
+    padding: 0 10px;
 
     &:focus,
     &:active {
-      border: 1px solid #666666;
+      border: 1px solid $borderColor;
     }
   }
 
@@ -96,15 +109,42 @@ $inputErrorField: #B85B4E;
     width: 100%;
     height: $feildHeight;
     background: #ffffff;
-    border: 1px solid #666666;
+    border: 1px solid $borderColor;
     color: #666666;
     border-radius: 3px;
     font-family: $questrialRegular;
     font-size: 14px;
+    padding: 0 5px;
 
     &:focus,
     &:active {
-      border: 1px solid #666666;
+      border: 1px solid $borderColor;
+    }
+  }
+
+  ngx-select {
+    > .ngx-select {
+      > .ngx-select__selected > .ngx-select__toggle {
+        height: $feildHeight;
+        background: #ffffff;
+        border: 1px solid $borderColor;
+        color: #666666;
+        border-radius: 3px;
+        font-family: $questrialRegular;
+        font-size: 14px;
+
+        > .ngx-select__toggle-buttons {
+          align-items: unset;
+        }
+      }
+
+      > .ngx-select__choices > .ngx-select__item-group {
+        > .ngx-select__item {
+          font-family: $questrialRegular;
+          font-size: 14px;
+          padding: 3px 15px;
+        }
+      }
     }
   }
 
@@ -135,7 +175,7 @@ $inputErrorField: #B85B4E;
         color: #666666;
         text-align: center;
         line-height: 18px;
-        border: 1px solid #666666;
+        border: 1px solid $borderColor;
         border-radius: 4px;
         margin: 0;
         display: flex;
@@ -147,24 +187,10 @@ $inputErrorField: #B85B4E;
         display: none;
 
         &:checked + label {
-          background: #588f8a;
-          border: 1px solid #588f8a;
-          color: #ffffff;
+          background: #C1E6E4;
+          border: 1px solid #4DA199;
+          color: #588f8a;
         }
-
-        // &:checked:disabled + label {
-        //   cursor: not-allowed;
-        //   background: $disabledBackgroundColor;
-        //   color: $disabledTextColor;
-        //   // border-color: $disabledBackgroundColor;
-        // }
-
-        // &:disabled + label {
-        //   cursor: not-allowed;
-        //   background: rgba($disabledBackgroundColor, 0.5);
-        //   color: $disabledTextColor;
-        //   // border-color: $disabledBackgroundColor;
-        // }
       }
     }
   }
@@ -175,9 +201,10 @@ $inputErrorField: #B85B4E;
     cursor: pointer;
     position: relative;
     font-family: $questrialRegular;
+    font-weight: bold;
     font-size: 14px;
     padding-left: 20px;
-    color: #fafafa;
+    color: #cccccc;
     margin: 0;
 
     &:after {
@@ -198,6 +225,15 @@ $inputErrorField: #B85B4E;
       opacity: 1;
     }
 
+    input[type="checkbox"]:checked ~ .label {
+      color: #fafafa;
+    }
+
+    input[type="checkbox"]:checked ~ .cr {
+      color: #fafafa;
+      border-color: #cccccc;
+    }
+
     .checkbox label input[type="checkbox"]:disabled+.cr {
       opacity: .5;
     }
@@ -205,7 +241,7 @@ $inputErrorField: #B85B4E;
     .cr {
       // position: relative;
       display: inline-block;
-      border: 1px solid #fafafa;
+      border: 1px solid #cccccc;
       border-radius: .25em;
       width: 14px;
       height: 14px;
@@ -229,8 +265,9 @@ $inputErrorField: #B85B4E;
   position: relative;
   font-family: $questrialRegular;
   font-size: 14px;
-  color: #fafafa;
+  color: #cccccc;
   margin: 0;
+  margin-bottom: 2px;
   display: block;
   padding-left: 20px;
   -webkit-user-select: none;
@@ -247,6 +284,14 @@ $inputErrorField: #B85B4E;
   // input:checked ~ .checkmark {
   //   background-color: #2196F3;
   // }
+
+  input:checked ~ .label {
+    color: #fafafa;
+  }
+
+  input:checked ~ .checkmark {
+    border-color: #fafafa;
+  }
 
   input:checked ~ .checkmark:after {
     display: block;
@@ -268,7 +313,7 @@ $inputErrorField: #B85B4E;
     height: 14px;
     width: 14px;
     // background-color: #fafafa;
-    border: 1px solid #fafafa;
+    border: 1px solid #cccccc;
     border-radius: 50%;
 
     &:after {

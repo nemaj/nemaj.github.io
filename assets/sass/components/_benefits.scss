@@ -1,6 +1,13 @@
 @import '~assets/sass/variables';
 
+section {
+  position: relative;
+}
+
 .benefit-container {
+  padding: 0 20px;
+  padding-top: 15px;
+
   &.disabled {
     * {
       cursor: unset !important;
@@ -13,6 +20,7 @@
   }
 
   > .benefit-header {
+    height: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +47,7 @@
             color: #5d5d5d;
           }
 
-          > .badge-count {
+          > .badge {
             background: #5d5d5d;
             color: #e6e6e6;
           }
@@ -74,8 +82,18 @@
         cursor: pointer;
         border: 1px solid #ffffff;
         border-radius: 5px;
-        padding: 1px 5px;
-        padding-top: 0;
+        padding: 0 5px;
+        height: 23px;
+        display: flex;
+        align-items: center;
+
+        &.red-fill {
+          background: #a54854;
+
+          > .badge {
+            color: #a54854;
+          }
+        }
 
         > .fas {
           cursor: pointer;
@@ -90,18 +108,19 @@
           font-size: 14px;
           color: #ffffff;
           margin: 0;
+          line-height: 18px;
         }
 
-        > .badge-count {
+        > .badge {
           cursor: pointer;
           background: #ffffff;
-          padding: 1px 4px;
-          border-radius: 5px;
           margin-left: 5px;
           color: #999999;
-          font-family: $helveticaBold;
-          font-size: 14px;
-          padding-left: 0;
+          font-family: $questrialRegular;
+          font-weight: bold;
+          font-size: 12px;
+          padding: 0.1em 0.3em;
+          border-radius: 3px;  
         }
       }
 
@@ -116,5 +135,6 @@
 
   > .benefit-body {
     padding: 15px;
+    padding-bottom: 0;
   }
 }

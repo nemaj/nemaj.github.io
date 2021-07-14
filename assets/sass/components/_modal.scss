@@ -1,0 +1,23 @@
+.engine-qoute-options {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  // min-height: 100vh;
+  width: 100vw !important;
+  max-width: unset;
+  margin-top: 100px !important;
+
+  .modal-content {
+    position: relative;
+    width: 650px !important;
+    border: 0 !important;
+  }
+
+  @media (max-width: 450px) {
+    margin-top: 20px !important;
+
+    >.modal-content {
+      width: 100% !important;
+    }
+  }
+}
