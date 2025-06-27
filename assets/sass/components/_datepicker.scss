@@ -1,9 +1,0 @@
-@import '~assets/sass/variables';
-
-.theme-default .bs-datepicker-head {
-  background-color: $themeMainColor;
-}
-
-.theme-default .bs-datepicker-body table td span.selected, .theme-default .bs-datepicker-body table td.selected span, .theme-default .bs-datepicker-body table td span[class*="select-"]:after, .theme-default .bs-datepicker-body table td[class*="select-"] span:after {
-  background-color: $themeMainColor;
-}
