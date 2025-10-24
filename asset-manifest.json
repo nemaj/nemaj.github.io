@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c6774aa.css",
-    "main.js": "/static/js/main.218cedaf.js",
+    "main.css": "/static/css/main.0667b590.css",
+    "main.js": "/static/js/main.3ab32241.js",
     "static/js/453.ececc0a5.chunk.js": "/static/js/453.ececc0a5.chunk.js",
+    "static/media/jamen-mama-resume.pdf": "/static/media/jamen-mama-resume.2cacf8d0e189e0c35d07.pdf",
     "index.html": "/index.html",
-    "main.3c6774aa.css.map": "/static/css/main.3c6774aa.css.map",
-    "main.218cedaf.js.map": "/static/js/main.218cedaf.js.map",
+    "main.0667b590.css.map": "/static/css/main.0667b590.css.map",
+    "main.3ab32241.js.map": "/static/js/main.3ab32241.js.map",
     "453.ececc0a5.chunk.js.map": "/static/js/453.ececc0a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c6774aa.css",
-    "static/js/main.218cedaf.js"
+    "static/css/main.0667b590.css",
+    "static/js/main.3ab32241.js"
   ]
 }
