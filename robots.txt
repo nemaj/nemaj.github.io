@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://jamenmama.github.io/jamen-mama-portfolio/sitemap.xml
