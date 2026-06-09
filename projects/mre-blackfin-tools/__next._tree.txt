@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/3urv35n7o3eqq.css","style"]
+:HL["/_next/static/chunks/0mhj3p0xmzkwr.css","style"]
 :HC["/",""]
 :HL["/_next/static/chunks/01iu53mprovsr.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"mre-blackfin-tools","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"0y20maEAZY5XwQcKnPLHr"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"mre-blackfin-tools","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"xwSw3OVHLFL0Ro9298_MD"}
